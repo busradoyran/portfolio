@@ -26,30 +26,21 @@ import { FaDatabase } from "react-icons/fa";
 const Skills = ({ darkMode }) => {
   const skills = [
     { name: "Python", icon: <SiPython />, color: "text-blue-500" },
-    { name: "Java", icon: <SiJava />, color: "text-red-500" },
-    { name: "C#", icon: <SiCsharp />, color: "text-green-600" },
-    { name: "JavaScript", icon: <SiJavascript />, color: "text-yellow-500" },
     { name: "Pandas", icon: <SiPandas />, color: "text-blue-600" },
     { name: "NumPy", icon: <SiNumpy />, color: "text-blue-400" },
     { name: "Scikit-learn", icon: <SiScikitlearn />, color: "text-orange-500" },
-    { name: "YOLOv8", icon: "🔍", color: "text-gray-700" },
     { name: "Matplotlib", icon: "📊", color: "text-blue-500" },
-    { name: "Android Studio", icon: <SiAndroid />, color: "text-green-500" },
-    { name: "ASP.NET MVC", icon: <SiDotnet />, color: "text-purple-600" },
-    { name: "WinForms", icon: <SiWindows />, color: "text-blue-500" },
-    { name: "Angular", icon: <SiAngular />, color: "text-red-600" },
-    { name: "Django", icon: <SiDjango />, color: "text-green-700" },
-    { name: "FastAPI", icon: <SiFastapi />, color: "text-teal-500" },
     { name: "Scrapy", icon: "🕷️", color: "text-green-600" },
-    { name: "Unity", icon: <SiUnity />, color: "text-gray-800" },
-    { name: "HTML5", icon: <SiHtml5 />, color: "text-orange-600" },
-    { name: "CSS3", icon: <SiCss3 />, color: "text-blue-500" },
     { name: "SQL", icon: <FaDatabase />, color: "text-blue-500" },
-    { name: "MS SQL", icon: <SiMicrosoftsqlserver />, color: "text-red-600" },
     { name: "PostgreSQL", icon: <SiPostgresql />, color: "text-blue-600" },
     { name: "Firebase", icon: <SiFirebase />, color: "text-yellow-500" },
     { name: "Kotlin", icon: <SiKotlin />, color: "text-purple-500" },
-    { name: "MVVM", icon: "🏗️", color: "text-gray-700" }
+    { name: "MVVM", icon: "🏗️", color: "text-gray-700" },
+    { name: "Java", icon: <SiJava />, color: "text-red-500" },
+    { name: "Unity", icon: <SiUnity />, color: "text-gray-800" },
+    { name: "C#", icon: <SiCsharp />, color: "text-green-600" },
+    { name: "Django", icon: <SiDjango />, color: "text-green-700" },
+    { name: "FastAPI", icon: <SiFastapi />, color: "text-teal-500" },
   ];
 
   return (
@@ -68,7 +59,7 @@ const Skills = ({ darkMode }) => {
 
       <div 
         data-aos="fade-up" 
-        className="grid grid-cols-5 md:grid-cols-3 sm:grid-cols-2 exsm:grid-cols-2 gap-4 mt-8"
+        className="grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2 exsm:grid-cols-2 gap-5 mt-8"
       >
         {skills.map((skill, index) => (
           <div
