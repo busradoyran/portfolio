@@ -14,7 +14,22 @@ const WorkCard = () => {
         >
           <div className="flex flex-col h-full max-w-4xl mx-auto">
             <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {project.title}
+              {project.title.includes('FormaEvi.net') && project.website ? (
+                <>
+                  {project.title.split('FormaEvi.net')[0]}
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-purple-600 underline hover:text-purple-800 transition-colors"
+                  >
+                    FormaEvi.net
+                  </a>
+                  {project.title.split('FormaEvi.net')[1]}
+                </>
+              ) : (
+                project.title
+              )}
             </h3>
             <p className="text-gray-600 mb-4 flex-grow">
               {project.desc}
